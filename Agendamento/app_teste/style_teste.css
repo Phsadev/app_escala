@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    
+}
+
+body {
+    font-family: Helvetica;
+    color: #fff;
+    background-color: rgba(13, 13, 13, 0.959);
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    text-align:left;
+    
+} 
+
+.menu {
+    margin: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 0.3rem 1rem;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #20a2b9;
+    border-radius: 2rem;
+}
+
+main {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 6vh;  
+}
+
+h3 {
+    margin-top: 1.2rem;
+    width: 100%;
+    height: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    text-align: left;
+    color: #20a2b9;
+}
+
+
+section {
+    background-color: #292828;
+}
+
+.teste, .teste1 {
+    margin: 0;
+    padding: 0.3rem 2rem;
+    display: flex;
+    text-align: center;    
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(244, 245, 245);
+    cursor: pointer;
+    text-transform: 1;
+}
+
+.teste:hover {
+    transform: scale(1.1);
+} 
+.teste1:hover {
+    transform: scale(1.1);
+}
+
+
+.teste {
+    background-color: #1d1c1cd8;
+
+}
+
+.teste1 {
+    color: #272525;
+}
+
+img {
+    color: #fff;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .teste {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    text-align: left;
+    gap: 2rem;
+    background-color: blueviolt;
+} */
+
+.button{
+    width: 8rem;
+    padding: 1rem;
+    margin:6%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #20a2b9;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+/* .btn {
+    justify-content: center;
+} */
+
+.button:hover {
+    opacity: 1;
+}

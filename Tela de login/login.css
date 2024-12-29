@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+
+}
+
+body {
+    background-color: rgb(13, 13, 12);
+    color: #ffffff;
+    font-size: 1.5rem;
+    min-width: 20rem;
+    margin: 0 auto;
+
+}
+
+.container {
+    width: 85%;
+    padding: 5%;
+    background-color: rgba(101, 103, 105, 0.281);
+    margin: 10% auto;
+    padding-top: rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: 1.8;
+}
+
+.formulario {
+    margin: 3rem 0;
+}
+
+input {
+    border-radius: 15px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0 1.2rem 0;
+    display: block;
+    border: none;
+}
+
+input[type=text],
+input[type=password] {
+
+    background: #ffffff;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn {
+    background-color: #0b5363;
+    color: white;
+    padding: 0.8rem 2rem;
+    margin: 3rem 0 0 0;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 1rem;
+
+}
+
+.btn:hover {
+    opacity: 1;
+}

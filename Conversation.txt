@@ -1,0 +1,75 @@
+import React, { useState } from 'react';
+
+function App() {
+  const [membros, setMembros] = useState({
+    vocalistas: [],
+    violao: [],
+    guitarra: [],
+    baixo: [],
+    teclado: [],
+    bateria: []
+  });
+
+  const [novoMembro, setNovoMembro] = useState('');
+  const [instrumento, setInstrumento] = useState('vocalistas');
+
+  // Suponha que temos um sistema de autenticação que nos fornece o usuário atual
+  const usuarioAtual = useAutenticacao();
+
+  const adicionarMembro = () => {
+    if (usuarioAtual.ehLider) {
+      setMembros(prevState => ({
+        ...prevState,
+        [instrumento]: [...prevState[instrumento], novoMembro]
+      }));
+      setNovoMembro('');
+    } else {
+      alert('Apenas o líder pode adicionar membros.');
+    }
+  };
+
+  const removerMembro = (instrumento, nome) => {
+    if (usuarioAtual.ehLider) {
+      setMembros(prevState => ({
+        ...prevState,
+        [instrumento]: prevState[instrumento].filter(membro => membro !== nome)
+      }));
+    } else {
+      alert('Apenas o líder pode remover membros.');
+    }
+  };
+
+  return (
+    <div>
+      <h1>Escala do Grupo de Louvor</h1>
+      {usuarioAtual.ehLider && (
+        <div>
+          <select value={instrumento} onChange={e => setInstrumento(e.target.value)}>
+            {Object.keys(membros).map(key => (
+              <option key={key} value={key}>{key}</option>
+            ))}
+          </select>
+          <input value={novoMembro} onChange={e => setNovoMembro(e.target.value)} />
+          <button onClick={adicionarMembro}>Adicionar Membro</button>
+        </div>
+      )}
+      {Object.entries(membros).map(([instrumento, lista]) => (
+        <div key={instrumento}>
+          <h2>{instrumento}</h2>
+          <ul>
+            {lista.map((membro, index) => (
+              <li key={index}>
+                {membro}
+                {usuarioAtual.ehLider && (
+                  <button onClick={() => removerMembro(instrumento, membro)}>Remover</button>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default App;
