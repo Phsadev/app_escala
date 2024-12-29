@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="login.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
-
-</html>
 <body>
     <div class="container">
-        <!-- <form action="index.html" method="get">
-            <input type="text" name="q" value="Twitter">
-            <input type="submit" value="Enviar">
-        </form> -->
         <div class="formulario">
-            <form action="../Agendamento/apresentation/apresentation.html" method="get">
-        <label for="uname"><b>Usuário</b></label>
-        <input type="text" placeholder="Insira o nome de usuário" name="uname" required>
-        
-        <label for="psw"><b>Senha</b></label>
-        <input type="password" placeholder="Insira a senha" name="psw" required>
-
-        <button type="submit" class="btn">Login</button>
-        
-        </form>
+            <form id="loginForm" class="mt-5">
+                <div class="form-group">
+                    <label for="uname"><b>Usuário</b></label>
+                    <input type="text" class="form-control" placeholder="Insira o nome de usuário" id="uname" required>
+                </div>
+                <div class="form-group">
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" class="form-control" placeholder="Insira a senha" id="psw" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
     </div>
-    </div>
+    <script src="usuarios.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
