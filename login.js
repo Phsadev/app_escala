@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const username = document.querySelector('input[name="uname"]').value;
         const password = document.querySelector('input[name="psw"]').value;
+        const errorMessage = document.getElementById('error-message');
         
         const adminUser = JSON.parse(localStorage.getItem('admin'));
 
@@ -26,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Sucesso no login
             window.location.href = "/Agendamento/apresentation/apresentation.html";
         } else {
-            alert('Nome de usuário ou senha incorretos');
+            // Exibe a mensagem de erro
+            errorMessage.textContent = 'Nome de usuário ou senha incorretos';
         }
     }
 
@@ -34,4 +36,3 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     loginForm.addEventListener('submit', login);
 });
-
