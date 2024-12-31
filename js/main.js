@@ -1,6 +1,6 @@
 const nomesBaixistas = ["Duca Tambasco", "Vitão", "Braguinha"];
 const nomesBateristas = ["Walter", "Fininho", "Alexandre Aposan"];
-const nomesGuitarristas = ["Cacau Santos", "Juninho Afram", "Felipe Eubank"];
+const nomesGuitarristas = ["Cacau", "Juninho", "Felipe E."];
 
 // Função para salvar seleção no Local Storage
 function saveSelection(role, name) {

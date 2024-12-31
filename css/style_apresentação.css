@@ -29,8 +29,8 @@ main {
 }
 
 .imagem {
-    margin: 25% auto;
-    width: 100%;
+    margin: 30% auto;
+    width: 80%;
     height: 30vh;
     display: block;
     flex-direction: column;
@@ -50,7 +50,7 @@ img {
 }
 
 section {
-    margin-top: 30%;
+    margin-top: 20%;
     padding: 1rem;
     display: flex;
     justify-content: center;

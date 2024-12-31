@@ -26,18 +26,21 @@ li {
     display: flex;
     align-items: center;
     text-align:left;
+    justify-content: center;
 } 
 
 a {
     color: rgb(255, 255, 255);
     padding: 0.7rem;
-    justify-content: space-between;
-    text-decoration: none;
+    text-decoration:solid;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 img {
-    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
     height: 85vh;
 }

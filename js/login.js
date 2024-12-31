@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (username === adminUser.username && password === adminUser.password) {
             // Sucesso no login
-            window.location.href = "/Agendamento/apresentation/apresentation.html";
+            window.location.href = "/apresentation.html";
         } else {
             // Exibe a mensagem de erro
             errorMessage.textContent = 'Nome de usuário ou senha incorretos';
